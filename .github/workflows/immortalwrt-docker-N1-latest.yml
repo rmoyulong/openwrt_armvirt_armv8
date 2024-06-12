@@ -80,18 +80,18 @@ jobs:
       #后置补丁 -- 在【更新订阅源】update后执行
       CORE_patch_after: false 
       ###########################################################
-      # 通用脚本 -- Scripts  目录 不执行: false 【【已经执行cd openwrt】】  在【更新订阅源】update前执行
+      # 通用脚本 -- update_before  目录 不执行: false 【【已经执行cd openwrt】】  在【更新订阅源】update前执行
       CORE_before_P1_SH: immortalwrt.sh
       #########################################################
-      # 通用脚本 -- Scripts  目录 不执行: false 【【已经执行cd openwrt】】 在【更新订阅源】update后执行
+      # 通用脚本 -- update_after  目录 不执行: false 【【已经执行cd openwrt】】 在【更新订阅源】update后执行
       CORE_after_P1_SH: Settings.sh
       CORE_after_P2_SH: armsr_init.sh
       CORE_after_P3_SH: openclash64.sh
       #########################################################
-      # 删除不兼容的插件 -- remove 目录 不执行: false 【【已经执行cd openwrt】】   在【更新订阅源】update后执行 make之前
+      # 删除不兼容的插件 -- edit 目录 不执行: false 【【已经执行cd openwrt】】   在【更新订阅源】update后执行 make之前
       CORE_remove: remove.sh
       #########################################################      
-      # 修正files配置文件脚本 -- remove  目录 不执行: false 【【已经执行cd openwrt】】 在【更新订阅源】update后执行 make之前
+      # 修正files配置文件脚本 -- edit  目录 不执行: false 【【已经执行cd openwrt】】 在【更新订阅源】update后执行 make之前
       CORE_Files_SH: edit_files.sh
       #########################################################
       #########################################################
