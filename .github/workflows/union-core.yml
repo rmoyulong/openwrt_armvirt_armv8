@@ -280,7 +280,7 @@ jobs:
               REPO_BRANCH="${{ inputs.CORE_BRANCH }}"
           fi
           
-          if [[ $OWRT_LINUX == *"5.15"* ]] ; then
+          if [[ $CORE_LINUX == *"5.15"* ]] ; then
               REPO_URL="${{ inputs.CORE_URL }}"
               REPO_BRANCH="${{ inputs.CORE_BRANCH }}"
           fi
