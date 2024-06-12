@@ -449,6 +449,10 @@ jobs:
             show_tag_name="Docker_Latest"
           fi
           
+          if [[ "${{ env.CORE_SOURCE }}" == *"openwrt"* ]]; then
+            show_tag_name=${{env.CORE_TARGET}}_${{env.CORE_SOURCE}}_Latest
+          fi
+          
           echo "show_tag_name=$show_tag_name" >> $GITHUB_ENV
           #获得当前目录的路径信息
           cd ./upload
