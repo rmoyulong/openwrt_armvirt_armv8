@@ -96,5 +96,23 @@ config interface 'lan6'
 	option device 'br-lan'">files/etc/config/network
 fi
 
+echo "config system
+	option timezone 'CST-8'
+	option zonename 'Asia/Shanghai'
+	option ttylogin '0'
+	option log_size '64'
+	option urandom_seed '0'
+	option log_proto 'udp'
+	option conloglevel '8'
+	option cronloglevel '8'
+	option zram_comp_algo 'lzo'
+	option hostname '$2'
+
+config timeserver 'ntp'
+	list server 'ntp.aliyun.com'
+	list server 'time1.cloud.tencent.com'
+	list server 'time.ustc.edu.cn'
+	list server 'cn.pool.ntp.org'">files/etc/config/system
+
 
 
