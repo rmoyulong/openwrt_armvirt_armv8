@@ -390,7 +390,7 @@ jobs:
           if [[ "${{ inputs.CORE_Files_SH }}" == *"false"* ]]; then
             echo "不需要执行 CORE_Files_SH"
           else
-            ${GITHUB_WORKSPACE}/${CORE_Files_SH} "$OP_router" "$CORE_header" "${{ inputs.CORE_IP }}"
+            ${GITHUB_WORKSPACE}/${CORE_Files_SH} "$OP_router" "$CORE_NAME" "${{ inputs.CORE_IP }}"
             echo $OP_router
             echo $CORE_header
           fi
