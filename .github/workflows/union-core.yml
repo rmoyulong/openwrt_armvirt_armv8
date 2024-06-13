@@ -346,7 +346,7 @@ jobs:
           if [[ "${{ inputs.CORE_after_P2_SH }}" == *"false"* ]]; then
             echo "不需要执行 CORE_after_P2_SH"
           else
-            ${GITHUB_WORKSPACE}/${CORE_after_P2_SH} "${CORE_FILES}" "${CORE_header}"
+            ${GITHUB_WORKSPACE}/${CORE_after_P2_SH} "${CORE_FILES}" "${CORE_header}" "${{ env.CORE_SOURCE }}"
           fi
           
           if [[ "${{ inputs.CORE_after_P3_SH }}" == *"false"* ]]; then
