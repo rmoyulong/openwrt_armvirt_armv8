@@ -42,8 +42,8 @@ on:
         - openclash
         - opencrash
         
-  schedule:
-    - cron: 0 4 4,18 * *
+  #schedule:
+    #- cron: 0 4 4,18 * *
 
 #CI权限
 permissions: write-all
