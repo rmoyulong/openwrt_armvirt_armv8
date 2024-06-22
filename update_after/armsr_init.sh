@@ -11,10 +11,6 @@ fi
 word=$1
 cp -rf AX6-Actions_Lede/union_files${word/patch/}/* ./files
 rm -rf AX6-Actions_Lede
-
-#修改immortalwrt、openwrt库armsr架构的Makefile
-cp -rf $GITHUB_WORKSPACE/patch/armsr_Makefile target/linux/armsr/Makefile
-
 #################################################################
 
 dos2unix ./files/etc/*.sh
