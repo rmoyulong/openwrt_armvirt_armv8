@@ -1,0 +1,28 @@
+# SPDX-License-Identifier: GPL-2.0-only
+#
+# Copyright (C) 2017 Yousong Zhou <yszhou4tech@gmail.com>
+
+include $(TOPDIR)/rules.mk
+
+BOARD:=armsr
+BOARDNAME:=Arm SystemReady (EFI) compliant
+FEATURES:=fpu pci pcie rtc usb boot-part rootfs-part
+FEATURES+=cpiogz ext4 ramdisk squashfs targz vmdk
+
+KERNEL_PATCHVER:=6.6
+
+include $(INCLUDE_DIR)/target.mk
+
+# blkid used for resolving PARTUUID
+# in sysupgrade. vfat required for
+# mounting ESP partition
+DEFAULT_PACKAGES += \
+	e2fsprogs \
+	mkf2fs \
+	automount \
+	resize2fs \
+	blkid \
+	kmod-fs-vfat \
+	dos2unix
+
+$(eval $(call BuildTarget))
