@@ -17,6 +17,6 @@ DEFAULT_PACKAGES += mkf2fs e2fsprogs
 # blkid used for resolving PARTUUID
 # in sysupgrade. vfat required for
 # mounting ESP partition
-DEFAULT_PACKAGES += blkid kmod-fs-vfat automount losetup partx-utils
+DEFAULT_PACKAGES += blkid kmod-fs-vfat automount
 
 $(eval $(call BuildTarget))
