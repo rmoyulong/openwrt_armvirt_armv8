@@ -70,9 +70,9 @@ jobs:
       CORE_BRANCH: master
       CORE_tag_name: 最新版
       # 头部 配置文件 --- header 目录
-      CORE_header: armvirt_64_DEVICE_generic.config
+      CORE_header: armsr_armv8_DEVICE_generic.config
       # 配置文件 -- config 目录
-      CORE_config: armvirt-zyxq.config
+      CORE_config: armsr-zyxq.config
       ###########################################################
       # 补丁脚本 -- patch 目录 不执行: false 没有执行cd openwrt
       #前置补丁 -- 在【更新订阅源】update前执行
