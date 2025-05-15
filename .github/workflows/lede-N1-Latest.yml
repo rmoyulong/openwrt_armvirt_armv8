@@ -76,7 +76,7 @@ jobs:
       ###########################################################
       # 补丁脚本 -- patch 目录 不执行: false 没有执行cd openwrt
       #前置补丁 -- 在【更新订阅源】update前执行
-      CORE_patch_before: before-remove-qca-shortcut-fe-patch.sh
+      CORE_patch_before: false
       #后置补丁 -- 在【更新订阅源】update后执行
       CORE_patch_after: false 
       ###########################################################
