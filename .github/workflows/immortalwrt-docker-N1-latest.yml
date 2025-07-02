@@ -78,7 +78,7 @@ jobs:
       #前置补丁 -- 在【更新订阅源】update前执行
       CORE_patch_before: false
       #后置补丁 -- 在【更新订阅源】update后执行
-      CORE_patch_after: false 
+      CORE_patch_after: python3.patch.sh 
       ###########################################################
       # 通用脚本 -- update_before  目录 不执行: false 【【已经执行cd openwrt】】  在【更新订阅源】update前执行
       CORE_before_P1_SH: immortalwrt.sh
