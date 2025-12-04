@@ -470,7 +470,8 @@ jobs:
         if: env.CORE_Pack == 'flippy'
         uses: ophub/flippy-openwrt-actions@main
         env:
-          OPENWRT_ARMVIRT: openwrt/upload/*rootfs.tar.gz
+          OPENWRT_ARMSR: openwrt/upload/*rootfs.tar.gz
+          OPENWRT_IP: ${{env.CORE_IP}}
           PACKAGE_SOC: ${{ env.CORE_TARGET }}
           WHOAMI: moyulong
           KERNEL_VERSION_NAME: ${{ env.CORE_LINUX }}
