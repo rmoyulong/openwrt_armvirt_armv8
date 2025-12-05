@@ -112,7 +112,7 @@ jobs:
       builder_name: ophub
       auto_kernel: true
       #特殊固件的方式 使用默认的：false
-      CORE_Pack: flippy
+      CORE_Pack: ophub
       #feeds.conf.default  -- patch 目录 使用默认的：false
       CORE_feeds_conf: false
       CORE_META: ${{ github.event.inputs.openclash_meta }}
