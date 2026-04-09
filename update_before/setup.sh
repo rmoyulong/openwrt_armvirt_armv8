@@ -1,5 +1,5 @@
 #公用函数
-source $GITHUB_WORKSPACE/Scripts/functions.sh
+source $GITHUB_WORKSPACE/update_before/functions.sh
 
 merge_package master https://github.com/coolsnowwolf/packages package lang/rust
 git clone https://github.com/stupidloud/helloworld package/helloworld
@@ -18,5 +18,5 @@ git_sparse_clone main https://github.com/Openwrt-Passwall/openwrt-passwall-packa
 git_sparse_clone main https://github.com/Openwrt-Passwall/openwrt-passwall-packages geoview
 
 cd package
-$GITHUB_WORKSPACE/Scripts/Packages.sh
-$GITHUB_WORKSPACE/Scripts/Handles.sh
+$GITHUB_WORKSPACE/update_before/Packages.sh
+$GITHUB_WORKSPACE/update_before/Handles.sh
